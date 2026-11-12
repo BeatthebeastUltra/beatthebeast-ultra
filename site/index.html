@@ -1,0 +1,1438 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Beat the Beast Ultra – Backyard Ultra in Tensfeld</title>
+<meta name="description" content="Beat the Beast Ultra: Backyard Ultra in Tensfeld am 01.05.2027. Jede Stunde 6,706 km. Last One Standing wird das neue Beast.">
+<meta property="og:title" content="Beat the Beast Ultra">
+<meta property="og:description" content="Backyard Ultra in Tensfeld. Jede Stunde 6,706 km. Besiege das Beast.">
+<meta property="og:image" content="assets/btb-logo.png">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" type="image/png" href="assets/btb-zeichen.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/anton-400.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/barlow-condensed-400.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/barlow-condensed-500.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/barlow-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/barlow-condensed-700.woff2) format('woff2')}</style>
+<style>
+body{margin:0;background:#0A0A0A}
+a{color:#F5F5F5}a:hover{color:#F07A45}
+@keyframes btb-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.btb-track{display:flex;width:max-content;animation:btb-marquee 38s linear infinite}
+@media (prefers-reduced-motion: reduce){.btb-track{animation:none}}
+.btb-beastrow{min-height:120px;box-sizing:border-box}
+@media (max-width: 1360px){.btb-beastrow{min-height:176px}}
+.btb-wide{grid-column:span 2}
+@media (max-width: 700px){.btb-wide{grid-column:auto}}
+</style>
+<style>:root{color-scheme:dark}html{scroll-behavior:smooth;background:#0A0A0A}[data-view]{overflow-x:clip}section[id]{scroll-margin-top:96px}</style>
+</head>
+<body>
+<form name="anmeldung" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="vorname"><input name="nachname"><input name="email"><input name="telefon"><input name="geburtsdatum"><input name="geschlecht"><input name="wohnort"><input name="verein"><input name="erfahrung"><input name="bestleistung"><input name="ziel"><input name="inneres_beast"><input name="steckbrief"><input name="notfall_name"><input name="notfall_telefon"><input name="nachricht"><input name="teilnahmebedingungen"><input name="datenschutz"><input name="teilnehmerliste"><input name="fotos"></form>
+<div id="page-start" data-view="start"></div>
+<template id="tpl-start">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; position: sticky; top: env(safe-area-inset-top, 0px); background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#top" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="top" style="position: relative; overflow: hidden; border-bottom: 1px solid #2A2A2A; background: #0A0A0A">
+<img src="assets/andrej-hembuch-2026.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 25%; filter: grayscale(1) contrast(1.15); opacity: 0.42">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, #0A0A0A 0%, rgba(10,10,10,0.92) 42%, rgba(10,10,10,0.6) 100%)"></div>
+<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 96px 24px 72px; display: flex; flex-direction: column; gap: 72px">
+<div style="display: flex; flex-wrap: wrap-reverse; gap: 40px 56px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 4vw, 56px); line-height: 1.08; text-transform: uppercase; white-space: nowrap">
+<span style="display: block">Jede Stunde 6,7 Kilometer.</span>
+<span style="display: block">Zwei Gegner:</span>
+<span style="display: block; color: {{accentText}}">Das Beast. Und du.</span>
+<span style="display: block">Besiege beide.</span>
+</h1>
+<a href="#beast" style="align-self: flex-start; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; text-decoration: none; border: 1px solid #2A2A2A; background: rgba(21,21,21,0.85); padding: 14px 20px; font-size: 17px"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: rgb(234, 99, 43)">Das Beast 2027</span><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1">Andrej Hembuch</span><span style="color: rgb(171, 171, 171)">21 Loops – wer besiegt das Beast?</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 16px 32px; background: {{accent}}; color: #0A0A0A; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 15px">Startplatz sichern</a>
+<a href="#rennen" style="text-decoration: none; padding: 15px 31px; border: 1px solid #F5F5F5; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 15px">So funktioniert's</a>
+</div>
+</div>
+<img src="assets/btb-logo.png" alt="Beat the Beast Ultra Logo: BTB mit Krallenspuren, darunter Beat the Beast und Ultra" style="flex: 0 1 440px; width: 451px; max-width: 100%; height: auto; aspect-ratio: 451 / 315; object-fit: contain; margin: 0 auto">
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Noch bis zum Startschuss</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px">
+<div style="border-top: 2px solid #F5F5F5; padding-top: 14px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 96px); line-height: 0.95; font-variant-numeric: tabular-nums">{{days}}</div>
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Tage</div>
+</div>
+<div style="border-top: 2px solid #F5F5F5; padding-top: 14px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 96px); line-height: 0.95; font-variant-numeric: tabular-nums">{{hours}}</div>
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Stunden</div>
+</div>
+<div style="border-top: 2px solid #F5F5F5; padding-top: 14px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 96px); line-height: 0.95; font-variant-numeric: tabular-nums">{{minutes}}</div>
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Minuten</div>
+</div>
+<div style="border-top: 2px solid {{accent}}; padding-top: 14px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 96px); line-height: 0.95; font-variant-numeric: tabular-nums; color: {{accentText}}">{{seconds}}</div>
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Sekunden</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div aria-hidden="true" style="background: {{accent}}; color: #0A0A0A; overflow: hidden; border-bottom: 1px solid #2A2A2A">
+<div class="btb-track" style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(22px, 3vw, 34px); line-height: 1; text-transform: uppercase; padding: 18px 0; white-space: nowrap"><span style="padding: 0 28px">Jede Stunde eine Loop</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">6,706 km</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">60 Minuten</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Kein Ziel</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Open End</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Ein Beast</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Last One Standing</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Besiege beide</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Jede Stunde eine Loop</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">6,706 km</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">60 Minuten</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Kein Ziel</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Open End</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Ein Beast</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Last One Standing</span><span aria-hidden="true">✕</span><span style="padding: 0 28px">Besiege beide</span><span aria-hidden="true">✕</span></div>
+</div>
+
+<section aria-label="Das Format" style="border-bottom: 1px solid #2A2A2A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px 64px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Das Format</div>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase">Niemand weiß, wie lange es dauert.</h2>
+<p style="margin: 0; color: #D6D6D6; max-width: 440px">Jede Stunde eine Loop. Immer wieder. Bis nur noch eine Person übrig ist.</p>
+</div>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #2A2A2A">
+<div style="display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); gap: 16px; align-items: baseline; padding: 22px 0; border-top: 1px solid #2A2A2A">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Loop</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; text-transform: uppercase; color: {{accentText}}">6,706 km</div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); gap: 16px; align-items: baseline; padding: 22px 0; border-top: 1px solid #2A2A2A">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Zeitlimit</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; text-transform: uppercase">60 Minuten je Loop</div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); gap: 16px; align-items: baseline; padding: 22px 0; border-top: 1px solid #2A2A2A">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Höhenmeter</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; text-transform: uppercase">35 m</div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); gap: 16px; align-items: baseline; padding: 22px 0; border-top: 1px solid #2A2A2A">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Gesamtzeit</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; text-transform: uppercase">Open End</div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); gap: 16px; align-items: baseline; padding: 22px 0; border-top: 1px solid #2A2A2A">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Start</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; text-transform: uppercase">01.05.2027 10 Uhr</div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); gap: 16px; align-items: baseline; padding: 22px 0; border-top: 1px solid #2A2A2A">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Ende</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.05; text-transform: uppercase; color: {{accentText}}">Last One Standing</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="beast" style="border-bottom: 1px solid #2A2A2A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Das Beast</div>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 5.4vw, 72px); line-height: 0.95; text-transform: uppercase">Zwei Beasts. Eins davon kennst DU.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px">
+<div style="background: #151515; border: 1px solid {{accent}}; padding: 40px 32px; display: flex; flex-direction: column; gap: 20px">
+<img src="assets/andrej-hembuch-2026.jpg" alt="Andrej Hembuch, das Beast 2027, beim Rennen 2026" style="display: block; width: 100%; aspect-ratio: 1 / 1; max-width: 100%; object-fit: cover; object-position: center 22%">
+<div style="display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid #2A2A2A; padding-bottom: 20px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Andrej Hembuch</div>
+<h3 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 60px); line-height: 1; text-transform: uppercase">Das Beast.</h3>
+</div>
+<div class="btb-beastrow" style="display: flex; flex-direction: column; gap: 20px">
+<div style="color: #ABABAB">Sieger 2026 · 21 Loops · 140,8 km</div>
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 64px; line-height: 1; color: {{accentText}}">2027</div>
+<div style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 15px">Lauf weiter, auch wenn Andrej stehen bleibt</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; color: #D6D6D6"><strong style="color: #F5F5F5; font-weight: 700">Last One Standing.</strong> Das gilt auch bei diesem Lauf. Andrej gilt es zu besiegen. Doch selbst wenn du ihn hinter dir lässt, ist das Rennen noch lange nicht vorbei. Jetzt heißt es: weiterlaufen, durchhalten und alles geben, bis keiner mehr vor dir läuft.<br><strong style="color: #F5F5F5; font-weight: 700">Wer zuletzt läuft, sichert sich nicht nur den Sieg, sondern auch die Einladung für nächstes Jahr.</strong></p>
+</div>
+</div>
+<div style="background: #151515; border: 1px solid #2A2A2A; padding: 40px 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; aspect-ratio: 1 / 1; max-width: 100%; display: flex; align-items: center; justify-content: center; background: #0A0A0A"><img src="assets/wolf.png" alt="Wolf-Logo: das Beast in dir" style="display: block; width: 78%; max-width: 100%; height: auto"></div>
+<div style="display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid #2A2A2A; padding-bottom: 20px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Dein Schweinehund</div>
+<h3 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 60px); line-height: 1; text-transform: uppercase">Dein Beast.</h3>
+</div>
+<div class="btb-beastrow" style="padding-top: 48px">
+<p style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1.2; letter-spacing: 0.02em; color: {{accentText}}">Nicht jeder besiegt das Beast des Jahres. Aber jeder kann das eigene Beast in sich besiegen.</p>
+</div>
+<p style="margin: 0; color: #D6D6D6">Es meldet sich in Loop acht. Nachts um drei. Wenn die Beine schwer sind und der Stuhl im Startbereich extrem bequem aussieht. Jede Loop, die du trotzdem startest, ist ein Sieg gegen das Beast in dir.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="rennen" style="border-bottom: 1px solid #2A2A2A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Das Rennen</div>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase">Kein Ziel. Nur die Uhr und das Beast.</h2>
+<p style="margin: 0; color: #D6D6D6">Beim Backyard Ultra gewinnt nicht der Schnellste, sondern wer am längsten durchhält. Wer als Letzte:r noch eine volle Loop schafft, gewinnt – alle anderen gehen als DNF in die Wertung.</p>
+</div>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #2A2A2A">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 48px; align-items: baseline; padding: 28px 0; border-top: 1px solid #2A2A2A">
+<div style="display: flex; align-items: baseline; gap: 20px">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(56px, 7vw, 88px); line-height: 0.9; color: transparent; -webkit-text-stroke: 2px {{accent}}">01</span>
+<h3 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(26px, 3vw, 38px); line-height: 1.05; text-transform: uppercase">Start zur vollen Stunde</h3>
+</div>
+<p style="margin: 0; color: #D6D6D6; font-size: 20px">Jede Loop startet pünktlich zur vollen Stunde – für alle gleichzeitig.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 48px; align-items: baseline; padding: 28px 0; border-top: 1px solid #2A2A2A">
+<div style="display: flex; align-items: baseline; gap: 20px">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(56px, 7vw, 88px); line-height: 0.9; color: transparent; -webkit-text-stroke: 2px {{accent}}">02</span>
+<h3 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(26px, 3vw, 38px); line-height: 1.05; text-transform: uppercase">6,706 km in 60 Minuten</h3>
+</div>
+<p style="margin: 0; color: #D6D6D6; font-size: 20px">Wie schnell du läufst, ist egal. Die restliche Zeit ist deine Pause.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 48px; align-items: baseline; padding: 28px 0; border-top: 1px solid #2A2A2A">
+<div style="display: flex; align-items: baseline; gap: 20px">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(56px, 7vw, 88px); line-height: 0.9; color: transparent; -webkit-text-stroke: 2px {{accent}}">03</span>
+<h3 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(26px, 3vw, 38px); line-height: 1.05; text-transform: uppercase">Zu spät heißt raus</h3>
+</div>
+<p style="margin: 0; color: #D6D6D6; font-size: 20px">Wer beim nächsten Startsignal nicht im Startbereich steht, scheidet aus.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 48px; align-items: baseline; padding: 28px 0; border-top: 1px solid #2A2A2A">
+<div style="display: flex; align-items: baseline; gap: 20px">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(56px, 7vw, 88px); line-height: 0.9; color: transparent; -webkit-text-stroke: 2px {{accent}}">04</span>
+<h3 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(26px, 3vw, 38px); line-height: 1.05; text-transform: uppercase">Last One Standing</h3>
+</div>
+<p style="margin: 0; color: #D6D6D6; font-size: 20px">Am Ende bleibt eine Person übrig. Die Person wird das neue Beast.</p>
+</div>
+</div>
+<a href="#view-regelwerk-seite" style="align-self: flex-start; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 14px; padding: 12px 0">Vollständiges Regelwerk lesen →</a>
+</div>
+</section>
+
+<section id="strecke" style="border-bottom: 1px solid #2A2A2A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Die Strecke 2027</div>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 80px); line-height: 0.95; text-transform: uppercase">Feld. Wald. Wiederholung.</h2>
+<p style="margin: 0; color: #D6D6D6">Die Loop führt über Feld- und Waldwege rund um Tensfeld. Start, Ziel und Verpflegung liegen im selben Bereich – dort verbringst du jede Pause.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div style="border-top: 1px solid #2A2A2A; padding-top: 12px"><div style="color: #ABABAB; font-size: 14px">Untergrund</div><div style="font-weight: 600">Feld- &amp; Waldweg</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 12px"><div style="color: #ABABAB; font-size: 14px">Höhenmeter je Loop</div><div style="font-weight: 600">35</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 12px"><div style="color: #ABABAB; font-size: 14px">Startbereich</div><div style="font-weight: 600">Am Bahndamm 1, 23824 Tensfeld</div></div>
+</div>
+</div>
+<div style="position: relative; width: 100%; aspect-ratio: 1000 / 960; overflow: hidden">
+<svg viewBox="80 820 1000 960" preserveAspectRatio="none" aria-label="Streckenkarte der Loop rund um Tensfeld" role="img" style="position: absolute; inset: 0; width: 100%; height: 100%">
+<polyline points="745,1695 860,1715 860,1737 705,1740 712,1640 722,1590 725,1520 420,1530 130,1545 150,1440 180,1250 175,1095 500,1065 717,1070 705,875 925,865 930,940 1005,950 1008,1075 750,1075 725,1415 830,1420 935,1425 955,1355 995,1335 1020,1535 975,1575 965,1615 735,1610 745,1695" fill="none" stroke="{{accent}}" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"></polyline>
+<circle cx="745" cy="1695" r="16" fill="#0A0A0A" stroke="#F5F5F5" stroke-width="5"></circle>
+</svg>
+<div style="position: absolute; left: 66.5%; top: 93.6%; transform: translate(-50%, 0); font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #F5F5F5; background: #0A0A0A; padding: 2px 6px; border: 1px solid #4A4A4A; white-space: nowrap">Start / Ziel</div>
+</div>
+</div>
+</section>
+
+<section id="anmeldung" style="background: {{accent}}; color: #0A0A0A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(64px, 11vw, 160px); line-height: 0.88; text-transform: uppercase">Traust du dich?</h2>
+<p style="margin: 0; font-size: 19px; font-weight: 500">Nur 200 Startplätze. Anmeldung bis zum 01.03.2027 – wer zuerst kommt, läuft zuerst gegen das Beast.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+<div><div style="font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600">Plätze</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px">200</div></div>
+<div><div style="font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600">Startgeld</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px">67 €</div></div>
+<div><div style="font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600">Anmeldeschluss</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px">01.03.2027</div></div>
+</div>
+<a href="#view-anmeldung-seite" style="text-decoration: none; text-align: center; padding: 18px 32px; background: #0A0A0A; color: #F5F5F5; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Zur Anmeldung</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-teilnehmer-seite" data-view="teilnehmer-seite" hidden></div>
+<template id="tpl-teilnehmer-seite">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" aria-current="page" style="text-decoration: none; padding: 10px 0; color: {{accentText}}">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="teilnehmer">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Teilnehmer</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 72px); line-height: 0.95">Das Starterfeld 2027</h1>
+<p style="margin: 0; color: #D6D6D6">Wer stellt sich dem Beast? Klick auf einen Namen und lies den Steckbrief.</p>
+</div>
+<div style="display: flex; align-items: baseline; gap: 10px">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1; color: {{accentText}}">{{takenCount}}</span>
+<span style="color: #ABABAB">von {{total}} Plätzen vergeben</span>
+</div>
+</div>
+
+<sc-if value="{{hasSel}}" hint-placeholder-val="{{ true }}">
+<div style="border: 1px solid {{accent}}; background: #151515; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0">
+<div style="min-height: 300px; display: flex; align-items: center; justify-content: center; background: #1C1C1C; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 140px; color: #3A3A3A">{{selNr}}</div>
+<div style="padding: 36px 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Startnummer {{selNr}}</span>
+<sc-if value="{{selIsBeast}}" hint-placeholder-val="{{ true }}">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; background: {{accent}}; color: #0A0A0A; padding: 4px 10px">Das Beast 2027</span>
+</sc-if>
+</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 4vw, 52px); line-height: 1">{{selName}}</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px">
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Alter</div><div style="font-weight: 600">{{selAge}}</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Wohnort</div><div style="font-weight: 600">{{selTown}}</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Erfahrung</div><div style="font-weight: 600">{{selExp}}</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Ziel 2027</div><div style="font-weight: 600">{{selGoal}}</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Verein / Team</div><div style="font-weight: 600">{{selClub}}</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Bestleistung</div><div style="font-weight: 600">{{selBest}}</div></div>
+</div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Letzter Backyard</div><div style="font-weight: 600">{{selLast}}</div></div>
+<div style="border-top: 1px solid #2A2A2A; padding-top: 10px"><div style="color: #ABABAB; font-size: 14px">Mein inneres Beast</div><div style="font-weight: 600">{{selBeast}}</div></div>
+</div>
+</div>
+</sc-if>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px" role="group" aria-label="Teilnehmer filtern">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+<button type="button" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="min-height: 44px; padding: 10px 18px; font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; background: {{f.bg}}; color: {{f.fg}}; border: 1px solid {{f.bd}}">{{f.label}}</button>
+</sc-for>
+</div>
+
+<div style="overflow-x: auto; border: 1px solid #2A2A2A">
+<div style="min-width: 1160px; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: 64px minmax(200px, 2fr) 70px minmax(110px, 1fr) minmax(120px, 1fr) minmax(130px, 1fr) 110px minmax(100px, 0.8fr) minmax(170px, 1.5fr); gap: 16px; padding: 14px 16px; background: #151515; border-bottom: 1px solid {{accent}}; font-size: 12px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #ABABAB">
+<div>Nr.</div><div>Name</div><div>Alter</div><div>Wohnort</div><div>Verein / Team</div><div>Erfahrung</div><div>Bestleistung</div><div>Ziel 2027</div><div>Inneres Beast</div>
+</div>
+<sc-for list="{{slots}}" as="slot" hint-placeholder-count="12">
+<sc-if value="{{slot.taken}}" hint-placeholder-val="{{ false }}">
+<div style="display: grid; grid-template-columns: 64px minmax(200px, 2fr) 70px minmax(110px, 1fr) minmax(120px, 1fr) minmax(130px, 1fr) 110px minmax(100px, 0.8fr) minmax(170px, 1.5fr); gap: 16px; align-items: center; padding: 8px 16px; min-height: 52px; box-sizing: border-box; border-bottom: 1px solid #2A2A2A; background: {{slot.rowBg}}; box-shadow: inset 3px 0 0 {{slot.mark}}">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1">{{slot.nr}}</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px">
+<button type="button" onClick="{{slot.pick}}" aria-label="Steckbrief von {{slot.name}} öffnen" style="min-height: 44px; padding: 0; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 17px; font-weight: 600; color: #F5F5F5; text-align: left; text-decoration: underline; text-decoration-color: #4A4A4A; text-underline-offset: 4px">{{slot.name}}</button>
+<sc-if value="{{slot.isBeast}}" hint-placeholder-val="{{ false }}">
+<span style="font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; background: {{accent}}; color: #0A0A0A; padding: 3px 8px">Beast</span>
+</sc-if>
+</div>
+<div style="color: #D6D6D6">{{slot.age}}</div>
+<div style="color: #D6D6D6">{{slot.town}}</div>
+<div style="color: #D6D6D6">{{slot.club}}</div>
+<div style="color: #D6D6D6">{{slot.exp}}</div>
+<div style="font-weight: 600">{{slot.best}}</div>
+<div style="color: #D6D6D6">{{slot.goal}}</div>
+<div style="color: #D6D6D6">{{slot.beast}}</div>
+</div>
+</sc-if>
+<sc-if value="{{slot.free}}" hint-placeholder-val="{{ true }}">
+<div style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; align-items: center; padding: 8px 16px; min-height: 52px; box-sizing: border-box; border-bottom: 1px solid #2A2A2A; background: {{slot.rowBg}}">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 24px; line-height: 1; color: #767676">{{slot.nr}}</div>
+<div style="display: flex; gap: 16px; align-items: center; color: #8E8E8E"><span>Startplatz frei</span><a href="#view-anmeldung-seite" style="font-size: 14px; font-weight: 600; padding: 12px 0">Platz sichern →</a></div>
+</div>
+</sc-if>
+</sc-for>
+</div>
+</div>
+<sc-if value="{{noSlots}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; color: #ABABAB">In dieser Kategorie ist noch niemand gemeldet.</p>
+</sc-if>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-hall-of-fame" data-view="hall-of-fame" hidden></div>
+<template id="tpl-hall-of-fame">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" aria-current="page" style="text-decoration: none; padding: 10px 0; color: {{accentText}}">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="halloffame">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Hall of Fame</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 72px); line-height: 0.95">Die Sieger der Geschichte.</h1>
+</div>
+<div style="border: 1px solid {{accent}}; background: #151515; padding: 40px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; align-items: end">
+<img src="assets/andrej-hembuch-2026.jpg" alt="Andrej Hembuch, Sieger 2026" style="display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: clamp(11px, 3.2vw, 13px); letter-spacing: 0.12em; text-transform: uppercase; color: #ABABAB; white-space: nowrap">Sieger 2026 · Backyard Ultra Tensfeld</div>
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 48px; line-height: 1">Andrej Hembuch</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1; color: {{accentText}}">21</div>
+<div style="color: #ABABAB">Loops</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1">140,8 km</div>
+<div style="color: #ABABAB">Gesamtdistanz</div>
+</div>
+</div>
+<div style="overflow-x: auto">
+<div style="min-width: 480px; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: 80px minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid {{accent}}; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB">
+<div>Jahr</div><div>Sieger</div><div>Loops</div><div>km</div>
+</div>
+<div style="display: grid; grid-template-columns: 80px minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #2A2A2A; font-variant-numeric: tabular-nums">
+<div style="font-weight: 600">05/2026</div><div>Andrej Hembuch</div><div>21</div><div>140,8</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-galerie-seite" data-view="galerie-seite" hidden></div>
+<template id="tpl-galerie-seite">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" aria-current="page" style="text-decoration: none; padding: 10px 0; color: {{accentText}}">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="galerie">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Galerie</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 72px); line-height: 0.95">Beast 2026</h1>
+<p style="margin: 0; color: #D6D6D6">Bilder vom ersten Beat the Beast Ultra in Tensfeld.</p>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); grid-auto-flow: dense; gap: 12px">
+<img class="btb-wide" src="assets/galerie-01.jpg" alt="Startaufstellung beim Beat the Beast Ultra 2026" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-02.jpg" alt="Das Zeltlager am Sportplatz in Tensfeld" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-03.jpg" alt="Die Rennuhr wird aufgebaut" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-04.jpg" alt="Jubel an der Startglocke" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-05.jpg" alt="Läufer mit Startnummer 445 auf der Loop" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-06.jpg" alt="Läufer auf der Loop" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-07.jpg" alt="Zwei Läuferinnen auf der Loop" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-08.jpg" alt="Zwei Läuferinnen kommen in den Startbereich" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img class="btb-wide" src="assets/galerie-09.jpg" alt="Die Crew bei der Zeitnahme" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+<img src="assets/galerie-10.jpg" alt="Die Crew im Startzelt" loading="lazy" style="display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #151515">
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-raceboard" data-view="raceboard" hidden></div>
+<template id="tpl-raceboard">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" aria-current="page" style="text-decoration: none; padding: 10px 0; color: {{accentText}}">Raceboard</a>
+</nav>
+</header>
+
+<section style="border-bottom: 1px solid #2A2A2A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 32px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Raceboard · Live</span>
+</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(48px, 7vw, 88px); line-height: 0.9">Wer ist wo?</h1>
+<p style="margin: 0; color: #D6D6D6; max-width: 560px">Jeder Punkt ist eine Läuferin oder ein Läufer auf der 6,706-km-Loop rund um Tensfeld. Klick auf einen Namen, um ihn auf der Karte hervorzuheben.</p>
+</div>
+</div>
+</section>
+
+<section aria-label="Rennstatus" style="border-bottom: 1px solid #2A2A2A">
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px">
+<div><div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB">Loop</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1; color: {{accentText}}">{{round}}</div></div>
+<div><div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB">Nächster Start in</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1">{{countdown}}</div></div>
+<div><div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB">Auf der Strecke</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1">{{onCourse}}</div></div>
+<div><div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB">Im Startbereich</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1">{{inCorral}}</div></div>
+<div><div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB">Ausgeschieden</div><div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 56px; line-height: 1; color: #8E8E8E">{{out}}</div></div>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 96px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; align-items: start">
+
+<div style="position: relative; width: 100%; aspect-ratio: 1000 / 960; overflow: hidden">
+<svg viewBox="80 820 1000 960" preserveAspectRatio="none" aria-label="Streckenkarte der Loop rund um Tensfeld" role="img" style="position: absolute; inset: 0; width: 100%; height: 100%">
+<polyline points="745,1695 860,1715 860,1737 705,1740 712,1640 722,1590 725,1520 420,1530 130,1545 150,1440 180,1250 175,1095 500,1065 717,1070 705,875 925,865 930,940 1005,950 1008,1075 750,1075 725,1415 830,1420 935,1425 955,1355 995,1335 1020,1535 975,1575 965,1615 735,1610 745,1695" fill="none" stroke="{{accent}}" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"></polyline>
+<circle cx="745" cy="1695" r="16" fill="#0A0A0A" stroke="#F5F5F5" stroke-width="5"></circle>
+</svg>
+<div style="position: absolute; left: 66.5%; top: 93.6%; transform: translate(-50%, 0); font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #F5F5F5; background: #0A0A0A; padding: 2px 6px; border: 1px solid #4A4A4A; white-space: nowrap">Start / Ziel</div>
+<sc-for list="{{dots}}" as="d" hint-placeholder-count="10">
+<div aria-hidden="true" style="position: absolute; left: {{d.left}}; top: {{d.top}}; width: {{d.size}}; height: {{d.size}}; transform: translate(-50%, -50%); border-radius: 50%; background: {{d.bg}}; color: {{d.fg}}; border: 2px solid {{d.ring}}; box-shadow: 0 0 0 3px rgba(10,10,10,0.7); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; transition: left 0.5s linear, top 0.5s linear; z-index: {{d.z}}">{{d.nr}}</div>
+</sc-for>
+</div>
+
+<div style="display: flex; flex-direction: column; border: 1px solid #2A2A2A">
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 130px; gap: 12px; padding: 12px 16px; background: #151515; border-bottom: 1px solid {{accent}}; font-size: 12px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #ABABAB">
+<div>Nr.</div><div>Name</div><div>Status</div>
+</div>
+<sc-for list="{{runners}}" as="r" hint-placeholder-count="10">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 8px 16px 10px; border-bottom: 1px solid #2A2A2A; background: {{r.rowBg}}; box-shadow: inset 3px 0 0 {{r.mark}}">
+<div style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 130px; gap: 12px; align-items: center">
+<div style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px; line-height: 1; color: {{r.nrColor}}">{{r.nr}}</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; min-width: 0">
+<button type="button" onClick="{{r.pick}}" aria-label="{{r.name}} auf der Karte hervorheben" style="min-height: 44px; padding: 0; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 16px; font-weight: 600; color: {{r.nameColor}}; text-align: left">{{r.name}}</button>
+<sc-if value="{{r.isBeast}}" hint-placeholder-val="{{ false }}">
+<span style="font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; background: {{accent}}; color: #0A0A0A; padding: 2px 6px">Beast</span>
+</sc-if>
+</div>
+<div style="font-size: 14px; color: {{r.statusColor}}">{{r.status}}</div>
+</div>
+<div style="display: flex; align-items: center; gap: 10px; padding-left: 56px">
+<div style="flex-grow: 1; height: 6px; background: #2A2A2A">
+<div style="height: 6px; width: {{r.pct}}; background: {{r.barColor}}; transition: width 0.5s linear"></div>
+</div>
+<div style="font-size: 13px; color: #ABABAB; min-width: 64px; text-align: right">{{r.km}}</div>
+</div>
+</div>
+</sc-for>
+<sc-if value="{{empty}}" hint-placeholder-val="{{ true }}">
+<div style="padding: 32px 16px; color: #ABABAB">Noch keine Läufer auf der Strecke. Das Raceboard startet am 01.05.2027 um 10 Uhr.</div>
+</sc-if>
+</div>
+
+</div>
+</section>
+
+</div>
+</template>
+<div id="page-anmeldung-seite" data-view="anmeldung-seite" hidden></div>
+<template id="tpl-anmeldung-seite">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="anmeldeformular">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 112px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 56px 72px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Anmeldung 2027</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(52px, 7vw, 96px); line-height: 0.92; text-transform: uppercase">Stell dich dem Beast.</h1>
+<p style="margin: 0; color: #D6D6D6; font-size: 20px">Füll das Formular aus und sichere dir deinen Startplatz. Wir melden uns persönlich per WhatsApp mit allen Infos zum Startgeld.</p>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #2A2A2A">
+<div style="border-top: 1px solid #2A2A2A; padding: 16px 0; display: flex; justify-content: space-between; gap: 16px; align-items: baseline"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Startgeld</span><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; line-height: 1">67 €</span></div>
+<div style="border-top: 1px solid #2A2A2A; padding: 16px 0; display: flex; justify-content: space-between; gap: 16px; align-items: baseline"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Plätze</span><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; line-height: 1">200</span></div>
+<div style="border-top: 1px solid #2A2A2A; padding: 16px 0; display: flex; justify-content: space-between; gap: 16px; align-items: baseline"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Anmeldeschluss</span><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; line-height: 1">01.03.2027</span></div>
+<div style="border-top: 1px solid #2A2A2A; padding: 16px 0; display: flex; justify-content: space-between; gap: 16px; align-items: baseline"><span style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Start</span><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; line-height: 1">01.05.2027 10 Uhr</span></div>
+</div>
+</div>
+<div style="min-width: 0">
+<form name="anmeldung" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" style="display: flex; flex-direction: column; gap: 44px; min-width: 0">
+<input type="hidden" name="form-name" value="anmeldung">
+<p style="display: none"><label>Nicht ausfüllen: <input name="bot-field"></label></p>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 20px; min-width: 0">
+<legend style="padding: 0 0 16px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 30px; line-height: 1; text-transform: uppercase">Über dich</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px 20px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Vorname <span style="color: {{accentText}}">*</span></span><input type="text" name="vorname" required autocomplete="given-name" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Nachname <span style="color: {{accentText}}">*</span></span><input type="text" name="nachname" required autocomplete="family-name" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>E-Mail <span style="color: {{accentText}}">*</span></span><input type="email" name="email" required autocomplete="email" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Handynummer (WhatsApp) <span style="color: {{accentText}}">*</span></span><input type="tel" name="telefon" required autocomplete="tel" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Geburtsdatum <span style="color: {{accentText}}">*</span></span><input type="date" name="geburtsdatum" required autocomplete="bday" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Geschlecht <span style="color: #8E8E8E; font-weight: 400">(optional)</span></span><select name="geschlecht" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"><option value="">Bitte wählen</option><option value="weiblich">weiblich</option><option value="männlich">männlich</option><option value="divers">divers</option><option value="keine Angabe">keine Angabe</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Wohnort <span style="color: {{accentText}}">*</span></span><input type="text" name="wohnort" required autocomplete="address-level2" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Verein / Team <span style="color: #8E8E8E; font-weight: 400">(optional)</span></span><input type="text" name="verein" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+</div>
+</fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 20px; min-width: 0">
+<legend style="padding: 0 0 16px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 30px; line-height: 1; text-transform: uppercase">Für deinen Steckbrief</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px 20px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Erfahrung <span style="color: {{accentText}}">*</span></span><select name="erfahrung" required style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"><option value="">Bitte wählen</option><option value="Erster Backyard">Erster Backyard</option><option value="Backyard-erfahren">Backyard-erfahren</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Bestleistung <span style="color: {{accentText}}">*</span></span><input type="text" name="bestleistung" required placeholder="z. B. 12 Loops" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Ziel 2027 <span style="color: {{accentText}}">*</span></span><input type="text" name="ziel" required placeholder="z. B. 15 Loops" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Mein inneres Beast <span style="color: {{accentText}}">*</span></span><input type="text" name="inneres_beast" required placeholder="z. B. die Nacht" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Das sollten wir über dich wissen <span style="color: {{accentText}}">*</span></span><span style="font-weight: 400; color: #ABABAB; font-size: 15px; letter-spacing: 0">Daraus machen wir deinen kleinen Steckbrief für die Teilnehmerseite.</span><textarea name="steckbrief" required rows="4" placeholder="z. B. Wie bist du zum Laufen gekommen? Was treibt dich an?" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0; resize: vertical"></textarea></label>
+</div>
+</fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 20px; min-width: 0">
+<legend style="padding: 0 0 16px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 30px; line-height: 1; text-transform: uppercase">Notfallkontakt</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px 20px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Name <span style="color: {{accentText}}">*</span></span><input type="text" name="notfall_name" required style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Telefon <span style="color: {{accentText}}">*</span></span><input type="tel" name="notfall_telefon" required style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0"></label>
+</div>
+</fieldset>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #D6D6D6"><span>Nachricht an uns <span style="color: #8E8E8E; font-weight: 400">(optional)</span></span><textarea name="nachricht" rows="4" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 12px 14px; background: #151515; border: 1px solid #3A3A3A; color: #F5F5F5; font-family: inherit; font-size: 18px; border-radius: 0; resize: vertical"></textarea></label>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 28px">
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #D6D6D6; cursor: pointer"><input type="checkbox" name="teilnahmebedingungen" value="ja" required style="width: 22px; height: 22px; margin: 2px 0 0; flex-shrink: 0; accent-color: #EA632B"><span>Ich habe das <a href="#view-regelwerk-seite" target="_blank" style="color: {{accentText}}">Regelwerk</a> gelesen, nehme auf eigene Gefahr teil und bin gesund genug für einen Backyard Ultra. <span style="color: {{accentText}}">*</span></span></label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #D6D6D6; cursor: pointer"><input type="checkbox" name="datenschutz" value="ja" required style="width: 22px; height: 22px; margin: 2px 0 0; flex-shrink: 0; accent-color: #EA632B"><span>Ich bin einverstanden, dass meine Daten für die Organisation des Rennens gespeichert werden und ihr mich dafür persönlich per WhatsApp anschreibt (siehe <a href="#view-datenschutz" target="_blank" style="color: {{accentText}}">Datenschutz</a>). <span style="color: {{accentText}}">*</span></span></label>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 4px; font-size: 17px; color: #D6D6D6"><legend style="padding: 0 0 4px">Mein Name, Wohnort und Steckbrief dürfen in der Teilnehmerliste auf der Webseite erscheinen. <span style="color: {{accentText}}">*</span></legend><div style="display: flex; gap: 32px"><label style="display: flex; gap: 10px; align-items: center; cursor: pointer; min-height: 44px"><input type="radio" name="teilnehmerliste" value="ja" required style="width: 22px; height: 22px; margin: 0; accent-color: #EA632B"><span>Ja</span></label><label style="display: flex; gap: 10px; align-items: center; cursor: pointer; min-height: 44px"><input type="radio" name="teilnehmerliste" value="nein" required style="width: 22px; height: 22px; margin: 0; accent-color: #EA632B"><span>Nein</span></label></div></fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 4px; font-size: 17px; color: #D6D6D6"><legend style="padding: 0 0 4px">Fotos und Videos vom Rennen, auf denen ich zu sehen bin, dürfen auf der Webseite veröffentlicht werden. <span style="color: {{accentText}}">*</span></legend><div style="display: flex; gap: 32px"><label style="display: flex; gap: 10px; align-items: center; cursor: pointer; min-height: 44px"><input type="radio" name="fotos" value="ja" required style="width: 22px; height: 22px; margin: 0; accent-color: #EA632B"><span>Ja</span></label><label style="display: flex; gap: 10px; align-items: center; cursor: pointer; min-height: 44px"><input type="radio" name="fotos" value="nein" required style="width: 22px; height: 22px; margin: 0; accent-color: #EA632B"><span>Nein</span></label></div></fieldset>
+</div>
+<div role="note" style="border: 2px solid {{accent}}; background: #1A100B; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px"><div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Wichtig: Zahlung per WhatsApp</div><p style="margin: 0; color: #F5F5F5; font-size: 18px">Nach deiner Anmeldung melden wir uns persönlich per WhatsApp bei dir. Dort bekommst du alle weiteren Infos, auch die Zahlungsinformationen und die Zahlungsmethode für das Startgeld von 67 €.</p></div>
+<button type="submit" style="align-self: flex-start; min-height: 56px; padding: 18px 40px; background: {{accent}}; color: #0A0A0A; border: 0; cursor: pointer; font-family: inherit; font-size: 17px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase">Verbindlich anmelden</button>
+<p style="margin: 0; color: #8E8E8E; font-size: 15px">Felder mit <span style="color: {{accentText}}">*</span> sind Pflicht.</p>
+</form>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-regelwerk-seite" data-view="regelwerk-seite" hidden></div>
+<template id="tpl-regelwerk-seite">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="regelwerk">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 112px">
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 760px; padding-bottom: 56px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Regelwerk</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(52px, 7vw, 96px); line-height: 0.92; text-transform: uppercase">Die Regeln des Beasts.</h1>
+<p style="margin: 0; color: #D6D6D6; font-size: 20px">Jede Stunde eine Loop. Wer nicht rechtzeitig zurück ist, ist raus. Hier steht alles, was du vor dem Start wissen musst.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding: 48px 0 0">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1; text-transform: uppercase">Der Start</h2>
+<ol style="list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #2A2A2A; min-width: 0">
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">01</span><span style="color: #D6D6D6; font-size: 20px">Alle Läufer und Läuferinnen starten gleichzeitig aus dem markierten Start-/Zielbereich heraus, jeweils zur vollen Stunde, auf eine 6,706 km lange Loop.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">02</span><span style="color: #D6D6D6; font-size: 20px">Der Start wird drei Minuten vorher durch dreimaliges Pfeifen, zwei Minuten vorher durch zweimaliges Pfeifen und eine Minute vorher durch einmaliges Pfeifen angekündigt. Zum Start der Loop wird eine Glocke geläutet.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">03</span><span style="color: #D6D6D6; font-size: 20px">Wer nicht direkt nach Ertönen der Glocke startet, für den ist der Wettkampf beendet.</span></li>
+</ol>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding: 48px 0 0">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1; text-transform: uppercase">Die Loop</h2>
+<ol style="list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #2A2A2A; min-width: 0">
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">04</span><span style="color: #D6D6D6; font-size: 20px">Für die 6,706 km haben die Läufer und Läuferinnen exakt eine Stunde Zeit. Wer nicht rechtzeitig zurück im Start-/Zielbereich ist, für den ist das Rennen beendet. Die nicht rechtzeitig vollendete Loop geht nicht in die Wertung ein.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">05</span><span style="color: #D6D6D6; font-size: 20px">Niemand darf vor Beendigung seiner Loop die Strecke verlassen. Einzige Ausnahme ist ein Toilettengang.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">06</span><span style="color: #D6D6D6; font-size: 20px">Wer vor Vollendung der Loop in den Start-/Zielbereich zurückkehrt, für den ist der Wettkampf beendet.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">07</span><span style="color: #D6D6D6; font-size: 20px">Die Loop ist tagsüber und nachts die gleiche. Es gibt keine gesonderte Route für die Nacht.</span></li>
+</ol>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding: 48px 0 0">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1; text-transform: uppercase">Auf der Strecke</h2>
+<ol style="list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #2A2A2A; min-width: 0">
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">08</span><span style="color: #D6D6D6; font-size: 20px">Es ist keinerlei Begleitung auf der Strecke durch Nicht-Teilnehmer erlaubt.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">09</span><span style="color: #D6D6D6; font-size: 20px">Persönliche Hilfe auf der Strecke ist nicht erlaubt. Teilnehmer dürfen sich aber gegenseitig aushelfen, zum Beispiel mit Verpflegung. Eigene Verpflegung darf selbstverständlich mit auf die Strecke genommen werden.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">10</span><span style="color: #D6D6D6; font-size: 20px">Es sind keine künstlichen Hilfsmittel erlaubt, also auch keine Trekking-Stöcke.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">11</span><span style="color: #D6D6D6; font-size: 20px">Zwischen 21:00 Uhr abends und 6:00 Uhr morgens sind Stirnlampen zu tragen.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">12</span><span style="color: #D6D6D6; font-size: 20px">Langsamere Läufer und Läuferinnen müssen schnellere vorbeilassen. Auf der breiten Strecke ist das aber kein Problem.</span></li>
+</ol>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding: 48px 0 0">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1; text-transform: uppercase">Die Wertung</h2>
+<ol style="list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #2A2A2A; min-width: 0">
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">13</span><span style="color: #D6D6D6; font-size: 20px">Der Wettkampf ist zeitlich nicht begrenzt.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">14</span><span style="color: #D6D6D6; font-size: 20px">Gewinner bzw. Gewinnerin ist die Person, die als Einzige eine Loop mehr als alle anderen absolviert hat. Auch diese letzte Loop muss innerhalb der Stunde rechtzeitig beendet werden.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">15</span><span style="color: #D6D6D6; font-size: 20px">Alle anderen außer dem Sieger bzw. der Siegerin erhalten ein DNF.</span></li>
+<li style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: baseline; border-top: 1px solid #2A2A2A; padding: 20px 0"><span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 26px; line-height: 1; color: {{accentText}}">16</span><span style="color: #D6D6D6; font-size: 20px">Hat niemand innerhalb des Zeitlimits eine Loop mehr als alle anderen absolviert, gibt es keinen Sieger bzw. keine Siegerin.</span></li>
+</ol>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding-top: 48px">
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 18px 40px; background: {{accent}}; color: #0A0A0A; font-size: 17px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase">Zur Anmeldung</a>
+<a href="#rennen" style="text-decoration: none; padding: 18px 0; font-size: 15px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">← Zurück zum Rennen</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-impressum" data-view="impressum" hidden></div>
+<template id="tpl-impressum">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="impressum">
+<div style="max-width: 860px; margin: 0 auto; padding: 72px 24px 112px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Impressum</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(52px, 7vw, 96px); line-height: 0.92">Impressum.</h1>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 32px 48px; align-items: start">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="assets/veranstalter.jpg" alt="Marisa Rusch und Tobias Gedwieschat, das Orga-Team des Beat the Beast Ultra" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border: 1px solid #2A2A2A">
+<figcaption style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #ABABAB">Das Orga-Team</figcaption>
+</figure>
+<div style="display: flex; flex-direction: column; gap: 40px; min-width: 0">
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Angaben gemäß § 5 DDG</h2>
+<p style="margin: 0; color: #D6D6D6"><strong style="color: #F5F5F5">Beat the Beast Ultra</strong><br>Postanschrift:<br>c/o Gedwieschat<br>Humboldredder 5<br>24634 Padenstedt</p>
+<p style="margin: 0; color: #D6D6D6"><span style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #ABABAB; margin-top: 14px">Organisationsteam</span>Marisa Rusch<br>Tobias Gedwieschat</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Kontakt</h2>
+<p style="margin: 0; color: #D6D6D6">Tobias Gedwieschat: <a href="tel:+491722603964">0172 2603964</a><br>Marisa Rusch: <a href="tel:+4917663386464">0176 63386464</a><br>E-Mail: <a href="mailto:mail@beatthebeast-ultra.com">mail@beatthebeast-ultra.com</a></p>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Verantwortlich für den Inhalt</h2>
+<p style="margin: 0; color: #D6D6D6">Verantwortlich nach § 18 Abs. 2 MStV:<br>Marisa Rusch<br>Tobias Gedwieschat<br>beide erreichbar über: Beat the Beast Ultra, c/o Gedwieschat, Humboldredder 5, 24634 Padenstedt</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Haftung für Inhalte</h2>
+<p style="margin: 0; color: #D6D6D6">Wir erstellen die Inhalte dieser Seite mit Sorgfalt. Für die Richtigkeit, Vollständigkeit und Aktualität können wir jedoch keine Gewähr übernehmen. Sobald uns ein Fehler oder eine Rechtsverletzung bekannt wird, entfernen wir den Inhalt umgehend.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Haftung für Links</h2>
+<p style="margin: 0; color: #D6D6D6">Diese Seite enthält Links zu externen Webseiten Dritter. Auf deren Inhalte haben wir keinen Einfluss; dafür ist stets der jeweilige Anbieter verantwortlich. Bei Bekanntwerden von Rechtsverletzungen entfernen wir solche Links umgehend.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Urheberrecht</h2>
+<p style="margin: 0; color: #D6D6D6">Texte, Bilder und Logos auf dieser Seite unterliegen dem deutschen Urheberrecht. Eine Verwendung außerhalb dieser Seite ist nur mit unserer Zustimmung erlaubt.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<div id="page-datenschutz" data-view="datenschutz" hidden></div>
+<template id="tpl-datenschutz">
+<div style="background: #0A0A0A; color: #F5F5F5; font-family: 'Barlow Condensed', 'Helvetica Neue', sans-serif; font-size: 18px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid #2A2A2A; background: #0A0A0A; z-index: 5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<a href="#view-start" aria-label="Beat the Beast Ultra – Startseite" style="text-decoration: none; color: #F5F5F5; display: flex; align-items: center; gap: 12px">
+<span style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.02em">BEAT THE BEAST</span>
+<span style="font-size: 12px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</span>
+</a>
+<a href="#view-anmeldung-seite" style="text-decoration: none; padding: 12px 24px; background: {{accent}}; color: #0A0A0A; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Anmelden</a>
+</div>
+<nav aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 6px; display: flex; flex-wrap: wrap; gap: 0 28px; align-items: center; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+<a href="#beast" style="text-decoration: none; padding: 10px 0">Das Beast</a>
+<a href="#rennen" style="text-decoration: none; padding: 10px 0">Das Rennen</a>
+<a href="#strecke" style="text-decoration: none; padding: 10px 0">Strecke</a>
+<a href="#view-teilnehmer-seite" style="text-decoration: none; padding: 10px 0">Teilnehmer</a>
+<a href="#view-hall-of-fame" style="text-decoration: none; padding: 10px 0">Hall of Fame</a>
+<a href="#view-galerie-seite" style="text-decoration: none; padding: 10px 0">Galerie</a>
+<a href="#view-raceboard" style="text-decoration: none; padding: 10px 0">Raceboard</a>
+</nav>
+</header>
+
+<section id="datenschutz">
+<div style="max-width: 860px; margin: 0 auto; padding: 72px 24px 112px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: {{accentText}}">Datenschutz</div>
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(52px, 7vw, 96px); line-height: 0.92">Datenschutz.</h1>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Verantwortliche</h2>
+<p style="margin: 0; color: #D6D6D6">Organisationsteam Beat the Beast Ultra:<br>Marisa Rusch<br>Tobias Gedwieschat</p>
+<p style="margin: 0; color: #D6D6D6">Postanschrift: Beat the Beast Ultra, c/o Gedwieschat, Humboldredder 5, 24634 Padenstedt<br>E-Mail: <a href="mailto:mail@beatthebeast-ultra.com">mail@beatthebeast-ultra.com</a></p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Kurz gesagt</h2>
+<p style="margin: 0; color: #D6D6D6">Wir verwenden keine Cookies, kein Tracking und keine Werbung. Daten erheben wir nur, wenn du die Webseite aufrufst (technisch notwendig) und wenn du dich über das Anmeldeformular anmeldest.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Hosting</h2>
+<p style="margin: 0; color: #D6D6D6">Diese Webseite wird bei Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA gehostet. Beim Aufruf der Seite verarbeitet Netlify technisch notwendige Daten wie deine IP-Adresse, Datum und Uhrzeit des Zugriffs und die aufgerufene Seite (Server-Logfiles). Das ist nötig, um die Seite sicher und stabil auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Netlify kann Daten in die USA übertragen; die Übermittlung stützt sich auf das EU-US Data Privacy Framework bzw. die EU-Standardvertragsklauseln.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Anmeldeformular</h2>
+<p style="margin: 0; color: #D6D6D6">Wenn du dich anmeldest, speichern wir die Angaben aus dem Formular: Name, E-Mail, Telefon, Geburtsdatum, Wohnort, freiwillige Angaben (z. B. Geschlecht, Verein, Laufdaten, Nachricht) und deinen Notfallkontakt. Wir nutzen diese Daten nur, um das Rennen zu organisieren, dich zu kontaktieren und im Notfall Hilfe zu holen (Art. 6 Abs. 1 lit. b DSGVO). Bitte informiere deinen Notfallkontakt darüber, dass du seine Daten angibst.</p>
+<p style="margin: 0; color: #D6D6D6">Die Formulardaten werden über den Formulardienst von Netlify gespeichert und per E-Mail an uns weitergeleitet. Nach deiner Anmeldung bekommst du automatisch eine Bestätigungs-E-Mail. Dafür werden dein Vorname und deine E-Mail-Adresse an den Dienst Zapier, Inc. (USA) übermittelt (Art. 6 Abs. 1 lit. b DSGVO); die Übermittlung stützt sich auf das EU-US Data Privacy Framework bzw. die EU-Standardvertragsklauseln. Nach dem Rennen löschen wir sie, sobald sie für die Organisation und gesetzliche Aufbewahrungspflichten nicht mehr gebraucht werden.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Teilnehmerliste, Ergebnisse und Fotos</h2>
+<p style="margin: 0; color: #D6D6D6">Name, Wohnort und Steckbrief zeigen wir nur dann in der Teilnehmerliste, wenn du im Formular zugestimmt hast (Art. 6 Abs. 1 lit. a DSGVO). Du kannst diese Zustimmung jederzeit per E-Mail an uns widerrufen.</p>
+<p style="margin: 0; color: #D6D6D6">Fotos und Videos vom Rennen, auf denen du zu sehen bist, veröffentlichen wir auf der Webseite nur, wenn du im Formular zugestimmt hast (Art. 6 Abs. 1 lit. a DSGVO). Auch diese Zustimmung kannst du jederzeit per E-Mail widerrufen; wir entfernen die Bilder dann.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Kontakt per WhatsApp</h2>
+<p style="margin: 0; color: #D6D6D6">Wir schreiben Teilnehmerinnen und Teilnehmern persönlich per WhatsApp, zum Beispiel mit Infos zum Startgeld und zum Rennen. Dafür nutzen wir die Handynummer aus dem Formular, wenn du dem im Formular zugestimmt hast (Art. 6 Abs. 1 lit. a DSGVO). WhatsApp ist ein Dienst der WhatsApp Ireland Limited (Meta); dabei können Daten auch in die USA übertragen werden. Wenn du nicht per WhatsApp kontaktiert werden möchtest, schreib uns eine E-Mail, dann melden wir uns auf anderem Weg.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Kontakt per E-Mail</h2>
+<p style="margin: 0; color: #D6D6D6">Wenn du uns schreibst, verwenden wir deine Angaben nur, um deine Anfrage zu beantworten.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Deine Rechte</h2>
+<p style="margin: 0; color: #D6D6D6">Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten, auf Datenübertragbarkeit sowie auf Widerspruch gegen die Verarbeitung. Eine erteilte Einwilligung kannst du jederzeit widerrufen. Schreib uns dafür einfach eine E-Mail.</p>
+<p style="margin: 0; color: #D6D6D6">Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel beim Unabhängigen Landeszentrum für Datenschutz Schleswig-Holstein (ULD), Holstenstraße 98, 24103 Kiel.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2A2A2A; padding-top: 32px">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; font-size: clamp(28px, 3.4vw, 40px); line-height: 1">Schriftarten</h2>
+<p style="margin: 0; color: #D6D6D6">Die Schriftarten dieser Seite werden direkt von unserem eigenen Webspace geladen. Es findet keine Verbindung zu Servern von Google statt.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="display: flex; flex-direction: column; line-height: 0.9">
+<span style="font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 22px">BEAT THE BEAST</span>
+<span style="font-size: 11px; letter-spacing: 0.6em; color: {{accentText}}; font-weight: 600; margin-top: 4px">ULTRA</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: #ABABAB">
+<a href="https://www.instagram.com/beatthebeast_ultra/" target="_blank" rel="noopener" style="padding: 10px 0">Instagram</a>
+<a href="mailto:mail@beatthebeast-ultra.com" style="padding: 10px 0">Kontakt</a>
+<a href="#view-impressum" style="padding: 10px 0">Impressum</a>
+<a href="#view-datenschutz" style="padding: 10px 0">Datenschutz</a>
+</nav>
+</div>
+</footer>
+
+</div>
+</template>
+<script>
+/* Beat the Beast Ultra – kleiner Seiten-Renderer (ersetzt die Design-Vorschau-Laufzeit) */
+(function () {
+  var VOID = { area: 1, base: 1, br: 1, col: 1, embed: 1, hr: 1, img: 1, input: 1, link: 1, meta: 1, source: 1, track: 1, wbr: 1 };
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function lookup(path, scope) {
+    if (path === 'true') return true;
+    if (path === 'false') return false;
+    var parts = path.split('.'), v = scope;
+    for (var i = 0; i < parts.length; i++) {
+      if (v == null) return undefined;
+      v = v[parts[i]];
+    }
+    return v;
+  }
+  function single(str) {
+    var m = /^\{\{\s*([^}]+?)\s*\}\}$/.exec(str.trim());
+    return m ? m[1] : null;
+  }
+  function fill(str, scope) {
+    return str.replace(HOLE, function (_, p) {
+      var v = lookup(p, scope);
+      return v == null ? '' : String(v);
+    });
+  }
+
+  function renderNodes(nodes, scope, ctx) {
+    var out = '';
+    for (var i = 0; i < nodes.length; i++) out += renderNode(nodes[i], scope, ctx);
+    return out;
+  }
+  function renderNode(n, scope, ctx) {
+    if (n.nodeType === 3) return esc(fill(n.nodeValue, scope)).replace(/&quot;/g, '"');
+    if (n.nodeType !== 1) return '';
+    var tag = n.tagName.toLowerCase();
+    if (tag === 'sc-for') {
+      var list = lookup(single(n.getAttribute('list')), scope) || [];
+      var as = n.getAttribute('as'), out = '';
+      for (var j = 0; j < list.length; j++) {
+        var s = Object.create(scope);
+        s[as] = list[j];
+        out += renderNodes(n.childNodes, s, ctx);
+      }
+      return out;
+    }
+    if (tag === 'sc-if') {
+      return lookup(single(n.getAttribute('value')), scope) ? renderNodes(n.childNodes, scope, ctx) : '';
+    }
+    var html = '<' + tag;
+    for (var k = 0; k < n.attributes.length; k++) {
+      var a = n.attributes[k], name = a.name;
+      if (name.indexOf('hint-') === 0) continue;
+      if (name === 'onclick') {
+        var fn = lookup(single(a.value), scope);
+        if (typeof fn === 'function') {
+          ctx.handlers.push(fn);
+          html += ' data-on-click="' + (ctx.handlers.length - 1) + '"';
+        }
+        continue;
+      }
+      html += ' ' + name + '="' + esc(fill(a.value, scope)) + '"';
+    }
+    html += '>';
+    if (VOID[tag]) return html;
+    return html + renderNodes(n.childNodes, scope, ctx) + '</' + tag + '>';
+  }
+
+  // Minimaler DOM-Abgleich, damit Animationen und Fokus beim Neuzeichnen erhalten bleiben
+  function morph(from, to) {
+    if (from.nodeType !== to.nodeType || from.nodeName !== to.nodeName) {
+      from.parentNode.replaceChild(to.cloneNode(true), from);
+      return;
+    }
+    if (from.nodeType === 3) {
+      if (from.nodeValue !== to.nodeValue) from.nodeValue = to.nodeValue;
+      return;
+    }
+    if (from.nodeType !== 1) return;
+    var i, a;
+    for (i = from.attributes.length - 1; i >= 0; i--) {
+      a = from.attributes[i];
+      if (!to.hasAttribute(a.name)) from.removeAttribute(a.name);
+    }
+    for (i = 0; i < to.attributes.length; i++) {
+      a = to.attributes[i];
+      if (from.getAttribute(a.name) !== a.value) from.setAttribute(a.name, a.value);
+    }
+    morphChildren(from, to);
+  }
+  function morphChildren(from, to) {
+    var fk = from.childNodes, tk = to.childNodes, i;
+    for (i = 0; i < tk.length; i++) {
+      if (i < fk.length) morph(fk[i], tk[i]);
+      else from.appendChild(tk[i].cloneNode(true));
+    }
+    while (fk.length > tk.length) from.removeChild(fk[fk.length - 1]);
+  }
+
+  function DCLogic(props) {
+    this.props = props || {};
+    this.state = {};
+  }
+  DCLogic.prototype.setState = function (patch) {
+    var s = {}, k;
+    for (k in this.state) s[k] = this.state[k];
+    for (k in patch) s[k] = patch[k];
+    this.state = s;
+    this.forceUpdate();
+  };
+  DCLogic.prototype.forceUpdate = function () {
+    if (this.__render) this.__render();
+  };
+  DCLogic.prototype.renderVals = function () { return {}; };
+  window.DCLogic = DCLogic;
+
+  window.mountPage = function (Component, tplId, rootId) {
+    var tpl = document.getElementById(tplId || 'page-template');
+    var root = document.getElementById(rootId || 'page');
+    var comp = new Component({});
+    var ctx = { handlers: [] };
+    comp.__render = function () {
+      ctx.handlers = [];
+      var html = renderNodes(tpl.content.childNodes, comp.renderVals(), ctx);
+      var next = document.createElement('div');
+      next.innerHTML = html;
+      morphChildren(root, next);
+    };
+    root.addEventListener('click', function (e) {
+      var el = e.target.closest('[data-on-click]');
+      if (!el) return;
+      var fn = ctx.handlers[+el.getAttribute('data-on-click')];
+      if (fn) fn(e);
+    });
+    comp.__render();
+    if (comp.componentDidMount) comp.componentDidMount();
+  };
+})();
+
+var views = {};
+views["start"] = (function () {
+class Component extends DCLogic {
+  componentDidMount() {
+    this.timer = setInterval(() => this.forceUpdate(), 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#EA632B';
+    const accentText = this.props.accentText ?? '#EA632B';
+    const target = new Date('2027-05-01T10:00:00+02:00');
+    let ms = target.getTime() - Date.now();
+    if (!(ms > 0)) ms = 0;
+    const s = Math.floor(ms / 1000);
+    const pad = (n) => String(n).padStart(2, '0');
+    return {
+      accent: accent, accentText: accentText,
+      days: String(Math.floor(s / 86400)),
+      hours: pad(Math.floor((s % 86400) / 3600)),
+      minutes: pad(Math.floor((s % 3600) / 60)),
+      seconds: pad(s % 60)
+    };
+  }
+}
+return Component;
+})();
+views["teilnehmer-seite"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#EA632B';
+    const accentText = this.props.accentText ?? '#EA632B';
+
+    // Teilnehmerdaten: pro Startnummer ein Eintrag. first = erster Backyard.
+    const people = {
+      // Beispiel: 1: { name: 'Vorname Nachname', age: '35', town: 'Kiel', club: 'Lauftreff', best: '12 Loops', first: false, last: 'Beat the Beast 2026 · 12 Loops', goal: '15 Loops', beast: 'Die Nacht' },
+    };
+    const total = 200;
+    const st = this.state || {};
+    const filter = st.filter || 'all';
+    const sel = people[st.sel] ? st.sel : 1;
+    const sp = people[sel];
+
+    const slots = [];
+    for (let nr = 1; nr <= total; nr++) {
+      const p = people[nr];
+      const taken = !!p;
+      const show = filter === 'all' || (filter === 'free' && !taken) ||
+        (filter === 'first' && taken && p.first) || (filter === 'exp' && taken && !p.first);
+      if (!show) continue;
+      const on = taken && nr === sel;
+      slots.push({
+        nr: String(nr), taken: taken, free: !taken,
+        name: taken ? p.name : '', isBeast: !!(taken && p.isBeast),
+        age: taken ? p.age : '', town: taken ? p.town : '', club: taken ? p.club : '',
+        exp: taken ? (p.first ? 'Erster Backyard' : 'Erfahren') : '',
+        best: taken ? (p.best || '–') : '', goal: taken ? p.goal : '', beast: taken ? p.beast : '',
+        rowBg: on ? '#2A1406' : (nr % 2 ? '#0A0A0A' : '#0D0D0D'),
+        mark: on ? accent : 'transparent',
+        pick: () => this.setState({ sel: nr })
+      });
+    }
+    const defs = [['all', 'Alle'], ['first', 'Erster Backyard'], ['exp', 'Backyard-erfahren'], ['free', 'Freie Plätze']];
+    const filters = defs.map(([key, label]) => ({
+      label: label, pressed: filter === key ? 'true' : 'false',
+      bg: filter === key ? '#F5F5F5' : 'transparent', fg: filter === key ? '#0A0A0A' : '#F5F5F5',
+      bd: filter === key ? '#F5F5F5' : '#4A4A4A',
+      pick: () => this.setState({ filter: key })
+    }));
+
+    return {
+      accent: accent, accentText: accentText,
+      total: String(total),
+      takenCount: String(Object.keys(people).length),
+      slots: slots, noSlots: slots.length === 0, filters: filters,
+      hasSel: !!sp,
+      selNr: String(sel), selName: sp ? sp.name : '', selAge: sp ? sp.age : '', selTown: sp ? sp.town : '',
+      selExp: sp ? (sp.first ? 'Erster Backyard' : 'Backyard-erfahren') : '',
+      selLast: sp ? (sp.first ? '–' : sp.last) : '', selGoal: sp ? sp.goal : '', selClub: sp ? sp.club : '', selBest: sp ? (sp.best || '–') : '', selBeast: sp ? sp.beast : '',
+      selIsBeast: !!(sp && sp.isBeast)
+    };
+  }
+}
+return Component;
+})();
+views["hall-of-fame"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#EA632B', accentText: this.props.accentText ?? '#EA632B' };
+  }
+}
+return Component;
+})();
+views["galerie-seite"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#EA632B', accentText: this.props.accentText ?? '#EA632B' };
+  }
+}
+return Component;
+})();
+views["raceboard"] = (function () {
+class Component extends DCLogic {
+  componentDidMount() {
+    this.timer = setInterval(() => this.forceUpdate(), 500);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+  simNow(speed) {
+    if (this.realBase == null) {
+      this.realBase = Date.now();
+      this.simBase = 7 * 3600 + 18 * 60; // Demo: Loop 8, Minute 18
+    }
+    return this.simBase + (Date.now() - this.realBase) / 1000 * speed;
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#EA632B';
+    const accentText = this.props.accentText ?? '#EA632B';
+    const st = this.state || {};
+    const speed = st.speed || 30;
+    const sim = this.simNow(speed);
+
+    // Streckenverlauf (aus der Strava-Route nachgezeichnet), Koordinaten im Kartenraster
+    const pts = [[745,1695],[860,1715],[860,1737],[705,1740],[712,1640],[722,1590],[725,1520],[420,1530],[130,1545],[150,1440],[180,1250],[175,1095],[500,1065],[717,1070],[705,875],[925,865],[930,940],[1005,950],[1008,1075],[750,1075],[725,1415],[830,1420],[935,1425],[955,1355],[995,1335],[1020,1535],[975,1575],[965,1615],[735,1610],[745,1695]];
+    const cum = [0];
+    for (let i = 1; i < pts.length; i++) {
+      cum.push(cum[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+    }
+    const len = cum[cum.length - 1];
+    const at = (f) => {
+      const d = Math.max(0, Math.min(1, f)) * len;
+      let i = 1;
+      while (i < cum.length - 1 && cum[i] < d) i++;
+      const t = (d - cum[i - 1]) / (cum[i] - cum[i - 1] || 1);
+      return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * t, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * t];
+    };
+
+    // Demo-Teilnehmer: pace = Minuten pro Loop, outAfter = letzte geschaffte Loop
+    // Teilnehmer kommen am Renntag hierher, z. B. { nr: 1, name: 'Vorname Nachname', pace: 45, beast: true }
+    const field = [];
+
+    const round = Math.floor(sim / 3600) + 1;
+    const min = (sim % 3600) / 60;
+    const left = Math.max(0, 3600 - (sim % 3600));
+    const pad = (n) => String(Math.floor(n)).padStart(2, '0');
+    const sel = st.sel || 1;
+
+    let onCourse = 0, inCorral = 0, out = 0, corralIdx = 0;
+    const dots = [];
+    const runners = field.map((r) => {
+      const isOut = r.outAfter != null && round > r.outAfter;
+      const running = !isOut && min < r.pace;
+      const frac = isOut ? 0 : (running ? min / r.pace : 1);
+      let status, statusColor;
+      if (isOut) { out++; status = 'Raus nach Loop ' + r.outAfter; statusColor = '#8E8E8E'; }
+      else if (running) { onCourse++; status = 'Auf der Strecke'; statusColor = '#F5F5F5'; }
+      else { inCorral++; status = 'Startbereich'; statusColor = accentText; }
+      const on = r.nr === sel;
+      if (!isOut) {
+        let [x, y] = at(frac);
+        if (!running) { x += ((corralIdx % 4) - 1.5) * 26; y -= 30 + Math.floor(corralIdx / 4) * 26; corralIdx++; }
+        dots.push({
+          nr: String(r.nr),
+          left: ((x - 80) / 1000 * 100).toFixed(2) + '%',
+          top: ((y - 820) / 960 * 100).toFixed(2) + '%',
+          size: on ? '34px' : '24px',
+          bg: r.beast ? '#F5F5F5' : (on ? accent : '#2A2A2A'),
+          fg: r.beast ? '#0A0A0A' : (on ? '#0A0A0A' : '#F5F5F5'),
+          ring: r.beast || on ? accent : '#F5F5F5',
+          z: on ? '3' : (r.beast ? '2' : '1')
+        });
+      }
+      return {
+        nr: String(r.nr), name: r.name, isBeast: !!r.beast, status: status, statusColor: statusColor,
+        pct: (frac * 100).toFixed(1) + '%',
+        km: isOut ? '–' : (frac * 6.7).toFixed(1).replace('.', ',') + ' km',
+        barColor: isOut ? '#3A3A3A' : (running ? accent : '#767676'),
+        rowBg: on ? '#2A1406' : 'transparent', mark: on ? accent : 'transparent',
+        nrColor: isOut ? '#767676' : '#F5F5F5', nameColor: isOut ? '#8E8E8E' : '#F5F5F5',
+        pick: () => this.setState({ sel: r.nr })
+      };
+    });
+
+    const speeds = [[1, 'Echtzeit'], [30, '30×'], [120, '120×']].map(([v, label]) => ({
+      label: label, pressed: speed === v ? 'true' : 'false',
+      bg: speed === v ? '#F5F5F5' : 'transparent', fg: speed === v ? '#0A0A0A' : '#F5F5F5',
+      bd: speed === v ? '#F5F5F5' : '#4A4A4A',
+      pick: () => {
+        this.simBase = this.simNow(speed);
+        this.realBase = Date.now();
+        this.setState({ speed: v });
+      }
+    }));
+
+    return {
+      accent: accent, accentText: accentText, round: field.length ? String(round) : '–',
+      countdown: field.length ? pad(left / 60) + ':' + pad(left % 60) : '–',
+      onCourse: String(onCourse), inCorral: String(inCorral), out: String(out),
+      dots: dots, runners: runners, speeds: speeds, empty: runners.length === 0
+    };
+  }
+}
+return Component;
+})();
+views["anmeldung-seite"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#EA632B', accentText: this.props.accentText ?? '#EA632B' };
+  }
+}
+return Component;
+})();
+views["regelwerk-seite"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#EA632B', accentText: this.props.accentText ?? '#EA632B' };
+  }
+}
+return Component;
+})();
+views["impressum"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#EA632B', accentText: this.props.accentText ?? '#EA632B' };
+  }
+}
+return Component;
+})();
+views["datenschutz"] = (function () {
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#EA632B', accentText: this.props.accentText ?? '#EA632B' };
+  }
+}
+return Component;
+})();
+(function () {
+  var mounted = {};
+  function show(view, anchor) {
+    document.querySelectorAll('[data-view]').forEach(function (el) { el.hidden = el.getAttribute('data-view') !== view; });
+    if (!mounted[view]) { mounted[view] = true; mountPage(views[view], 'tpl-' + view, 'page-' + view); }
+    var target = anchor && document.getElementById(anchor);
+    if (target) target.scrollIntoView();
+    else window.scrollTo(0, 0);
+  }
+  function go(hash) {
+    var h = (hash || '').replace(/^#/, '');
+    if (h.indexOf('view-') === 0) return show(h.slice(5));
+    var el = h && document.getElementById(h);
+    var host = el && el.closest('[data-view]');
+    show(host ? host.getAttribute('data-view') : 'start', h);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var h = a.getAttribute('href');
+    if (h === '#') { e.preventDefault(); return; }
+    e.preventDefault();
+    go(h);
+  });
+  show('start');
+  if (location.hash) go(location.hash);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · Beat the Beast Ultra</title>
+<link rel="icon" type="image/png" href="/assets/btb-zeichen.png">
+<style>
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/anton-400.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/barlow-condensed-400.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/barlow-condensed-500.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/barlow-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/barlow-condensed-700.woff2) format('woff2')}
+:root{--bg:#0A0A0A;--surface:#151515;--line:#2A2A2A;--fg:#F5F5F5;--muted:#ABABAB;--accent:#EA632B;--ok:#6FD394;--okbg:#12291B;--nobg:#2A1710;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Barlow Condensed','Helvetica Neue',Arial,sans-serif;font-size:17px;line-height:1.45}
+.wrap{max-width:1100px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right)) 64px max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:20px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--accent)}
+h1{margin:4px 0 0;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(34px,6vw,52px);line-height:.95;text-transform:uppercase}
+input,select,button,textarea{font:inherit;color:var(--fg);border-radius:0}
+input[type=text],input[type=password],select,textarea{background:var(--surface);border:1px solid #3A3A3A;min-height:44px;padding:8px 12px;font-size:17px}
+.btn{min-height:44px;padding:8px 18px;background:var(--accent);color:#0A0A0A;border:0;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:14px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#login{max-width:380px;display:flex;flex-direction:column;gap:12px;margin-top:20px}
+.err{color:#FF8A65;min-height:1.3em}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:10px 4px}.stat+.stat{border-left:1px solid var(--line);padding-left:14px}
+.stat b{display:block;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:32px;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{min-height:38px;padding:6px 14px;border:1px solid var(--line);background:transparent;font-size:15px;font-weight:600;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.tools .grow{flex:1}
+#search{flex:0 1 200px;min-width:0}
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:44px minmax(0,1.5fr) 150px 110px 140px 120px;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.head{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.nr{color:var(--muted);font-variant-numeric:tabular-nums}
+.name{font-weight:600;font-size:19px;background:none;border:0;padding:0;text-align:left;cursor:pointer;overflow-wrap:anywhere}
+.name small{display:block;font-weight:400;font-size:14px;color:var(--muted)}
+.wa a{color:var(--fg)}
+.tog{min-height:40px;width:100%;border:1px solid var(--line);background:var(--nobg);font-size:15px;font-weight:600;cursor:pointer}
+.tog[aria-pressed=true]{background:var(--okbg);color:var(--ok);border-color:var(--ok)}
+.row select{width:100%;min-height:40px;font-size:16px}
+.lbl{display:none}
+.details{grid-column:1/-1;background:var(--surface);border:1px solid var(--line);padding:14px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 24px}
+.details div span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.details .full{grid-column:1/-1}
+.details textarea{width:100%;min-height:60px}
+.empty{padding:24px 0;color:var(--muted)}
+details.box{border:1px solid var(--line);background:var(--surface);padding:12px 16px}
+summary{cursor:pointer;font-weight:600}
+.note{color:var(--muted);font-size:15px}
+@media (max-width:760px){
+  .head{display:none}
+  .row{grid-template-columns:1fr 1fr;gap:8px;padding:14px 0}
+  .nr{display:none}
+  .row .name,.row .wa{grid-column:1/-1}
+  .lbl{display:block;font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .row .ap{grid-column:1/-1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div><div class="eyebrow">Beat the Beast Ultra · Admin</div><h1>Anmeldungen</h1></div>
+    <button class="btn ghost" id="logout" type="button" hidden>Abmelden</button>
+  </header>
+
+  <form id="login" autocomplete="on">
+    <label for="pw">Admin-Passwort</label>
+    <input type="password" id="pw" autocomplete="current-password" required>
+    <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="remember"> Auf diesem Gerät angemeldet bleiben</label>
+    <button class="btn" type="submit">Einloggen</button>
+    <div class="err" id="loginErr" role="alert"></div>
+  </form>
+
+  <main id="app" hidden>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div class="stats" aria-live="polite">
+        <div class="stat"><b id="sTotal">0</b><span>Angemeldet</span></div>
+        <div class="stat"><b id="sPaid">0</b><span>Bezahlt</span></div>
+        <div class="stat"><b id="sWa">0</b><span>Kontaktiert</span></div>
+      </div>
+      <div class="tools" role="group" aria-label="Filter">
+        <button class="chip" data-f="alle" aria-pressed="true" type="button">Alle</button>
+        <button class="chip" data-f="unbezahlt" aria-pressed="false" type="button">Noch nicht bezahlt</button>
+        <button class="chip" data-f="offen" aria-pressed="false" type="button">Noch nicht kontaktiert</button>
+        <span class="grow"></span>
+        <input type="text" id="search" placeholder="Suchen" aria-label="Suchen">
+        <button class="btn ghost" id="reload" type="button">Aktualisieren</button>
+      </div>
+      <div class="list" id="list">
+        <div class="row head"><div>Nr.</div><div>Name</div><div>Handy</div><div>Bezahlt</div><div>Ansprechpartner</div><div>WhatsApp</div></div>
+        <div class="empty" id="empty">Wird geladen …</div>
+      </div>
+      <p class="note">Tipp: Auf einen Namen tippen zeigt alle Angaben aus der Anmeldung.</p>
+      <details class="box">
+        <summary>Weitere Funktionen</summary>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+          <div>
+            <strong>Ältere Anmeldungen aus Netlify übernehmen</strong>
+            <p class="note" style="margin:4px 0 8px">Bei Netlify unter Forms &gt; anmeldung auf „Download as CSV“ klicken und die Datei hier auswählen. Wer schon in der Liste steht, wird übersprungen.</p>
+            <input type="file" id="csv" accept=".csv,text/csv">
+          </div>
+          <div><button class="btn ghost" id="export" type="button">Liste als CSV herunterladen</button></div>
+          <p class="note" id="toolStatus" aria-live="polite"></p>
+        </div>
+      </details>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const LABELS={vorname:'Vorname',nachname:'Nachname',email:'E-Mail',telefon:'Handy (WhatsApp)',geburtsdatum:'Geburtsdatum',geschlecht:'Geschlecht',wohnort:'Wohnort',verein:'Verein / Team',erfahrung:'Erfahrung',bestleistung:'Bestleistung',ziel:'Ziel 2027',inneres_beast:'Inneres Beast',steckbrief:'Das sollten wir über dich wissen',notfall_name:'Notfallkontakt',notfall_telefon:'Notfall-Telefon',nachricht:'Nachricht',teilnahmebedingungen:'Regelwerk akzeptiert',datenschutz:'Datenschutz akzeptiert',teilnehmerliste:'Auf Teilnehmerliste',fotos:'Fotos erlaubt'};
+  const LONG=['steckbrief','nachricht'];
+  let pw='', items=[], filter='alle', q='', open=null, confirmDel=null;
+
+  function store(k,v){try{localStorage.removeItem(k)}catch(e){} try{sessionStorage.removeItem(k)}catch(e){}}
+  function iso(v){const t=new Date(v);return isNaN(t)?undefined:t.toISOString()}
+  function load(k){try{return sessionStorage.getItem(k)||localStorage.getItem(k)}catch(e){return null}}
+
+  async function api(method,body){
+    const r=await fetch('/api/admin',{method,headers:{'x-admin-password':pw,'content-type':'application/json'},body:body?JSON.stringify(body):undefined});
+    const d=await r.json().catch(()=>({}));
+    if(!r.ok){const e=new Error(d.error||('http_'+r.status));e.status=r.status;throw e}
+    return d;
+  }
+  const name=e=>`${(e.daten||{}).vorname||''} ${(e.daten||{}).nachname||''}`.trim()||'(ohne Namen)';
+  const norm=s=>String(s||'').toLowerCase();
+  function waLink(tel){let d=String(tel||'').replace(/[^\d+]/g,'');if(!d)return null;if(d.startsWith('+'))d=d.slice(1);else if(d.startsWith('00'))d=d.slice(2);else if(d.startsWith('0'))d='49'+d.slice(1);return 'https://wa.me/'+d}
+  function datum(iso){const t=new Date(iso);return isNaN(t)?'':t.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'})}
+
+  function render(){
+    $('#sTotal').textContent=items.length;
+    $('#sPaid').textContent=items.filter(e=>e.bezahlt).length;
+    $('#sWa').textContent=items.filter(e=>e.kontaktiert).length;
+    const list=$('#list'); list.querySelectorAll('.row:not(.head)').forEach(n=>n.remove());
+    let shown=items.filter(e=>filter==='alle'||(filter==='unbezahlt'&&!e.bezahlt)||(filter==='offen'&&!e.kontaktiert));
+    if(q) shown=shown.filter(e=>norm(name(e)+' '+(e.daten||{}).email+' '+(e.daten||{}).wohnort).includes(q));
+    const empty=$('#empty'); empty.hidden=shown.length>0;
+    empty.textContent=items.length?'Keine Treffer für diesen Filter.':'Noch keine Anmeldungen. Neue Anmeldungen erscheinen hier automatisch.';
+    for(const e of shown){
+      const d=e.daten||{}; const row=document.createElement('div'); row.className='row'; row.dataset.id=e.id;
+      const wa=waLink(d.telefon);
+      row.innerHTML=`<div class="nr">${items.indexOf(e)+1}</div>
+        <button class="name" type="button" aria-expanded="${open===e.id}"><span class="n"></span><small></small></button>
+        <div class="wa"><span class="lbl">Handy</span>${wa?'<a target="_blank" rel="noopener"></a>':'<span class="note">–</span>'}</div>
+        <div><span class="lbl">Bezahlt</span><button class="tog" type="button" data-k="bezahlt" aria-pressed="${!!e.bezahlt}">${e.bezahlt?'✓ Bezahlt':'Offen'}</button></div>
+        <div class="ap"><span class="lbl">Ansprechpartner</span><select aria-label="Ansprechpartner"><option value="">– wählen –</option><option>Tobias</option><option>Marisa</option></select></div>
+        <div><span class="lbl">WhatsApp</span><button class="tog" type="button" data-k="kontaktiert" aria-pressed="${!!e.kontaktiert}">${e.kontaktiert?'✓ Kontaktiert':'Offen'}</button></div>`;
+      row.querySelector('.n').textContent=name(e);
+      row.querySelector('small').textContent=[d.wohnort,datum(e.eingang)?'angemeldet '+datum(e.eingang):''].filter(Boolean).join(' · ');
+      if(wa){const a=row.querySelector('.wa a');a.href=wa;a.textContent=d.telefon}
+      row.querySelector('select').value=e.ansprechpartner||'';
+      if(open===e.id){
+        const det=document.createElement('div'); det.className='details';
+        for(const [k,v] of Object.entries(d)){
+          if(v===''||v==null) continue;
+          const c=document.createElement('div'); if(LONG.includes(k)) c.className='full';
+          const s=document.createElement('span'); s.textContent=LABELS[k]||k; c.appendChild(s); c.appendChild(document.createTextNode(String(v))); det.appendChild(c);
+        }
+        const n=document.createElement('div'); n.className='full';
+        n.innerHTML='<span>Interne Notiz</span><textarea aria-label="Interne Notiz"></textarea>';
+        n.querySelector('textarea').value=e.notiz||''; det.appendChild(n);
+        const del=document.createElement('div'); del.className='full';
+        del.innerHTML=confirmDel===e.id?'<span>Wirklich löschen? Das kann nicht rückgängig gemacht werden.</span><button class="btn" type="button" data-yes>Endgültig löschen</button> <button class="btn ghost" type="button" data-no>Abbrechen</button>':'<button class="btn ghost" type="button" data-del>Anmeldung löschen</button>';
+        det.appendChild(del); row.appendChild(det);
+      }
+      list.appendChild(row);
+    }
+  }
+
+  async function refresh(){
+    try{const d=await api('GET');items=d.items||[];render()}
+    catch(err){if(err.status===401){logout('Bitte erneut einloggen.')}else{$('#empty').hidden=false;$('#empty').textContent='Die Liste konnte nicht geladen werden. Bitte auf „Aktualisieren“ drücken.'}}
+  }
+  async function save(id,patch){
+    const i=items.findIndex(x=>x.id===id); if(i<0)return;
+    const prev=items[i]; items[i]={...prev,...patch}; render();
+    try{const d=await api('POST',{action:'update',id,...patch});items[i]=d.item;render()}
+    catch(err){items[i]=prev;render();$('#toolStatus').textContent='Speichern hat nicht geklappt. Bitte nochmal versuchen.'}
+  }
+
+  $('#list').addEventListener('click',async ev=>{
+    const row=ev.target.closest('.row'); if(!row||row.classList.contains('head'))return; const id=row.dataset.id; const e=items.find(x=>x.id===id); if(!e)return;
+    const t=ev.target.closest('.tog'); if(t){save(id,{[t.dataset.k]:!e[t.dataset.k]});return}
+    if(ev.target.closest('.name')){open=open===id?null:id;confirmDel=null;render();return}
+    if(ev.target.closest('[data-del]')){confirmDel=id;render();return}
+    if(ev.target.closest('[data-no]')){confirmDel=null;render();return}
+    if(ev.target.closest('[data-yes]')){confirmDel=null;open=null;try{await api('POST',{action:'delete',id});items=items.filter(x=>x.id!==id);render()}catch(err){$('#toolStatus').textContent='Löschen hat nicht geklappt.'}}
+  });
+  $('#list').addEventListener('change',ev=>{const row=ev.target.closest('.row');if(!row)return;
+    if(ev.target.tagName==='SELECT')save(row.dataset.id,{ansprechpartner:ev.target.value});
+    if(ev.target.tagName==='TEXTAREA')save(row.dataset.id,{notiz:ev.target.value});
+  });
+  document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.f;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render()}));
+  $('#search').addEventListener('input',e=>{q=norm(e.target.value.trim());render()});
+  $('#reload').addEventListener('click',refresh);
+
+  function parseCSV(text){const out=[];let row=[],f='',inQ=false;for(let i=0;i<text.length;i++){const c=text[i];if(inQ){if(c==='"'){if(text[i+1]==='"'){f+='"';i++}else inQ=false}else f+=c}else if(c==='"')inQ=true;else if(c===','){row.push(f);f=''}else if(c==='\n'){row.push(f);out.push(row);row=[];f=''}else if(c!=='\r')f+=c}if(f||row.length){row.push(f);out.push(row)}return out}
+  $('#csv').addEventListener('change',async ev=>{
+    const st=$('#toolStatus'); const file=ev.target.files[0]; if(!file)return;
+    try{
+      const rows=parseCSV(await file.text()); const h=(rows[0]||[]).map(x=>x.trim());
+      if(!h.includes('vorname')){st.textContent='In der Datei fehlt die Spalte „vorname“. Ist es die CSV vom Formular „anmeldung“?';return}
+      const iDate=h.findIndex(x=>/created_at|date/i.test(x));
+      const zeilen=rows.slice(1).filter(r=>r.some(Boolean)).map(r=>{const daten={};h.forEach((k,i)=>{if(k&&!/^(id|created_at|date|ip|user_agent|referrer|form_name|form-name|bot-field)$/i.test(k))daten[k]=r[i]||''});return{daten,eingang:iDate>=0?iso(r[iDate]):undefined}});
+      st.textContent='Wird übernommen …';
+      const d=await api('POST',{action:'import',zeilen}); st.textContent=`${d.neu} neu übernommen, ${d.uebersprungen} standen schon drin.`; refresh();
+    }catch(err){st.textContent='Die Datei konnte nicht übernommen werden.'}
+    ev.target.value='';
+  });
+  $('#export').addEventListener('click',()=>{
+    const keys=['vorname','nachname','email','telefon','geburtsdatum','geschlecht','wohnort','verein','notfall_name','notfall_telefon'];
+    const head=[...keys.map(k=>LABELS[k]),'Bezahlt','Ansprechpartner','WhatsApp kontaktiert','Notiz','Angemeldet am'];
+    const esc=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+    const lines=[head.map(esc).join(';'),...items.map(e=>[...keys.map(k=>(e.daten||{})[k]),e.bezahlt?'Ja':'Nein',e.ansprechpartner,e.kontaktiert?'Ja':'Nein',e.notiz,datum(e.eingang)].map(esc).join(';'))];
+    const blob=new Blob(['﻿'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='btb-anmeldungen.csv';document.body.appendChild(a);a.click();a.remove();
+  });
+
+  function showApp(){$('#login').hidden=true;$('#app').hidden=false;$('#logout').hidden=false;refresh()}
+  function logout(msg){pw='';store('btb_admin',null);$('#app').hidden=true;$('#logout').hidden=true;$('#login').hidden=false;$('#loginErr').textContent=msg||''}
+  $('#logout').addEventListener('click',()=>logout(''));
+  $('#login').addEventListener('submit',async ev=>{
+    ev.preventDefault(); pw=$('#pw').value; $('#loginErr').textContent='';
+    try{await api('GET');
+      try{($('#remember').checked?localStorage:sessionStorage).setItem('btb_admin',pw)}catch(e){}
+      $('#pw').value='';showApp()}
+    catch(err){pw='';$('#loginErr').textContent=err.status===401?'Das Passwort stimmt nicht.':(err.message==='kein_passwort_gesetzt'?'Bei Netlify ist noch kein ADMIN_PASSWORD eingetragen.':'Gerade nicht erreichbar. Bitte später nochmal versuchen.')}
+  });
+  const saved=load('btb_admin'); if(saved){pw=saved;showApp()}
+})();
+</script>
+</body>
+</html>
