@@ -1,7 +1,7 @@
 // Admin-Schnittstelle: nur mit dem Passwort aus der Netlify-Umgebungsvariable ADMIN_PASSWORD
 import { getStore } from "@netlify/blobs";
 import { createHash, timingSafeEqual } from "node:crypto";
-import { STORE, alle, aenderung, importieren } from "../lib/anmeldungen.mjs";
+import { STORE, alle, aenderung, importieren, ausEvent } from "../lib/anmeldungen.mjs";
 
 export const config = { path: "/api/admin" };
 
@@ -41,6 +41,7 @@ export default async (req) => {
       await store.setJSON(id, next);
       return json({ item: next });
     }
+    if (body.action === "event") return json({ ergebnis: await ausEvent(store, body.event) });
     if (body.action === "import") return json(await importieren(store, body.zeilen));
     if (body.action === "delete") {
       await store.delete(String(body.id || ""));
